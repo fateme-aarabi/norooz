@@ -2,3 +2,46 @@
 p {
   color: $color-warning;
 }
+
+.btn-first{
+  background-color : $bg-color;
+  height : 56px; 
+  width:100%;
+  border: solid; 
+  border-color: $color-secondary;
+  border-radius: 2px;
+  color: $color-primary;
+  cursor: pointer;
+}
+.grid {
+  display: grid;
+  padding:20px;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  gap:10px;
+  
+
+  &-item {
+    border: solid; 
+    border-color: $color-secondary;
+    border-radius: 2px;
+    height:auto;
+    width:auto;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height:60%;
+    }
+  }
+  .category-title {
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction : column;
+  }
+}
